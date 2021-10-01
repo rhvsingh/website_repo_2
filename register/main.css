@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Asap|Khula|Montserrat|Muli|Nunito|Source+Sans+Pro|Abel|Hind+Madurai|Karla|Lato|Open+Sans|Oxygen|Questrial|Quicksand|Roboto|Spectral+SC|Titillium+Web");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+}
+
+#header {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#header_heading {
+    text-align: center;
+    color: #16fc21;
+    text-shadow: 0px 0.3px 2px #16fc21;
+    font-size: 35px;
+    font-family: 'Muli', sans-serif;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+#header_form {
+    text-align: center;
+    background: #fc2516;
+    width: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 10vh auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px -5px #999999;
+}
+
+#header_form_heading {
+    text-align: center;
+    font-size: 30px;
+    font-size: bold;
+    letter-spacing: 2px;
+    font-family: 'Muli', sans-serif;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.header_form_input {
+    margin: 20px;
+}
+
+.header_form_input input {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+
+}
+
+.header_form_input input[type='submit'] {
+    margin-top: 20px;
+    padding: 10px 60px;
+    cursor: pointer;
+    background: #fff;
+}
+
+@media screen and (max-width: 500px) {
+    #header_heading {
+        font-size: 30px;
+    }
+    
+    #header_form {
+        width: 260px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .header_form_input {
+        margin: 15px;
+    }
+    
+    .header_form_input input {
+        padding: 7px 0px;
+        font-size: 17px;
+    }
+    
+    .header_form_input input[type='submit'] {
+        padding: 7px 40px;
+    }
+}

@@ -78,8 +78,12 @@ html {
     .change_pass_input:nth-child(4) {
         margin-left: 0px;
     }
-    
+
     .change_pass_input input {
         display: block;
     }
+}
+
+#logo {
+    margin-top: 20px;
 }

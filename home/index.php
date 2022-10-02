@@ -18,14 +18,14 @@
 
     while($row= mysqli_fetch_assoc($result)){
         if($username==$row['username'] && $password==$row['password']){
-        
+
 ?>
 
 <?php
-            
+
     $first_name=$row['first_name'];
-    $last_name=$row['last_name'];   
-        
+    $last_name=$row['last_name'];
+
 ?>
 
 <!DOCTYPE HTML>
@@ -51,9 +51,9 @@
 
     <?php
             date_default_timezone_set("Asia/Kolkata");
-        
+
             $date= date("H");
-        
+
             if($date >=5  && $date <12){
                 echo'Good Morning, '.$first_name.' '.$last_name;
             }
@@ -66,7 +66,7 @@
             elseif($date >=00 && $date <5){
                 echo $first_name.' '.$last_name.', Its Mid Night';
             }
-        
+
         ?>
 
     <div id="logout">
@@ -117,7 +117,9 @@
             </fieldset>
 
         </form>
-
+        <div id=logo>
+   <a href="https://hacktoberfest.com/" target="_blank"><img src="http://danschenker.com/wp-content/uploads/2022/10/Hfest-Logo-2-Color-Void@2x.png" border="0" height="100px" alt="Hacktoberfest logo"></a>
+       </div>
     </div>
 
 </body>
@@ -125,7 +127,7 @@
 </html>
 
 <?php
-        
+
     }
 }
 
